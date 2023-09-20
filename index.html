@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>ResumeForge</title>
+</head>
+<body>
+    <h1 class="xxlarge">Login here to generate your CV</h1>
+    <form action="resume.html">
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Enter your username and password</p>
+        </div>
+        <div class="mainContainer">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br><br>
+            <label for="pswrd">Password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required>
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="frgtpswrd.html">Forgot Password?</a></p>
+            </div>
+            
+                  <button type="submit">Login</button>
+                   
+            <p class="register">Not a member?  <a href="signup.html">Register here!</a></p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
