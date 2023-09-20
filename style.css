@@ -1,0 +1,87 @@
+.w3-center{
+    color: rgb(255, 255, 255);
+}
+.this{
+    color: rgb(0, 0, 0);
+    font-weight:bolder;
+}
+#preview-button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(132, 114, 173);
+    border-radius: 8px;
+    float: right;
+    margin-right: 9%;
+}
+body {
+  background-image: url(lg8.jpg);
+  background-size: 1920px 1080px; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  font-family: Arial, sans-serif;
+  
+}
+.w3-padding {
+    justify-items: space-between; 
+    gap: 5px;
+    margin-left: 25px;
+    /* Adjust the value to control the gap between elements */
+  }
+.preview{
+    float: right;
+    border-bottom: 25px;
+    border-radius: 8px;
+    padding: 8px;
+    color: rgb(214, 111, 37);
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px rgba(11, 3, 9, 2);
+  }
+.title{
+    color: rgb(17, 41, 177);
+  }
+.w3-btn{
+    color: rgb(250, 250, 250);
+    background-color: rgb(58, 25, 148);
+    border-radius: 5px;
+    margin-left: 4px;
+  }
+.container {
+    background-color: #013ab4;
+    padding: 20px;
+    max-width: 20000px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.82);
+    margin:auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #05091f;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 2px;
+  color:  #025fd8;
+}
+h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #05091f;
+}
+.row {
+  background-color: #00eeff;
+  padding: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.82);
+  margin: 0 auto;
+  max-width: 1090px;
+}
+.col {
+  background-color: #f5f7eb;
+  padding: 20px;
+  box-shadow: 0px 0px 8px rgba(38, 28, 99, 0.82);
+  margin: 0 auto;
+  max-width: 600px;
+}
+h6 {
+  font-weight:bolder;
+  color: #000103;
+}

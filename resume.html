@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ResumeForge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1 style="font-size: 50px" class="text-center my-1" >Creative Resume Generator</h1>
+<h3 class="text-center my-2" >Unlock Your Potential, Create Your Future</h3>
+<h5 class="text-center " >By Aneesh M Somayaji</h5>
+<div class="container">
+ <h3 class="w3-xlarge w3-center this">Enter your details here</h3>
+ <div class="w3-medium w3-padding">
+   <div class="row">
+    <div class="col">
+   Your Name : <input type="text" id="fullname"> <br><br>
+   Date of Birth : <input type="date" id="date" > <br> <br>
+   Phone Number: <input type="number" id="phone" maxlength="10" data-toggle="popover" data-trigger="hover" data-content="10 digits only" placeholder="Phone no"> <br> <br>
+   Email : <input type="email" id="email"> <br> <br>
+   Address : <input type="text" id="add"> <br> <br> 
+   <h6>Describe yourself</h6>
+   Description: <input type="text" id="des" placeholder="Details about you"> <br> <br> 
+   <h6>Important Links</h6>
+   Facebook : <input type="url" id="fb"> <br> <br> 
+   LinkedIn: <input type="url" id="ln"> <br> <br> 
+   Github : <input type="url" id="gh"> <br> <br> 
+   Other links : <input type="url" id="ol"> <br> <br>
+   <h6>Projects and Experiences</h6>
+   Projects Done: <input type="text" id="pr" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Projects completed by you" placeholder="Projects done"> <br> <br> 
+     Work Experience: <input type="text" id="we" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Details about your previous jobs and positions" placeholder="Experience"><br><br>
+    </div>
+  <div class="col">
+   <h6>Educational Qualifications</h6> 
+   Secondary School year: <input type="text" id="ssc" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: 10th grade completed from Mitra Academy in 2019" placeholder="SSC details" placeholder="SSC"><br> <br> 
+   Secondary School Board: <input type="text" id="sscboard" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: ICSE/CBSE/State SSLC Board" placeholder="SSC board" placeholder="SSC board"><br> <br>
+   Higher Secondary School year: <input type="text" id="hsc" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: 12th grade completed from RV PU College in 2021" placeholder="HSC details"  >  <br> <br> 
+   Higher Secondary School Board: <input type="text" id="hscboard" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: ICSE/CBSE/State PU Board" placeholder="HSC board" placeholder="HSC"><br> <br>  
+   Under Graduation year/details: <input type="text" id="degree" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: BE/B.Tech to be completed in 2025 from Ramaiah Institute of Technology" placeholder="UG details"> <br> <br> 
+   Post Graduation year(optional): <input type="text" id="pg" placeholder="PG details"> <br> <br> 
+   Post Graduation Board(optional): <input type="text" id="pgboard" placeholder="PG board "> <br> <br>
+   <h6>Skills</h6> 
+    Enter your skills:  <input type="text" id="skills" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: Python,HTML,CSS,JavaScript,Java.etc" placeholder="Your skills"><br><br>
+    <h6>Hobbies and other Interests</h6> 
+    Enter your Hobbies/Interests<input type="text" id="hobint" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex:Coding,Playing games,Reading.etc" placeholder="Areas of interest"> <br> <br>
+    <h6>Courses completed </h6> 
+    List the courses: <input type="text" id="cres" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Ex: Web Development course from Udemy" placeholder="Courses done"> <br> <br>
+    <h6>Achievements </h6> 
+    Awards/Certificates: <input type="text" id="achi" data-toggle="popover" title="Tip 💡" data-trigger="hover" data-content="Awards/Certifications Received" placeholder="Your achievements"> <br><br>
+    </div>
+    </div>
+</div>
+</div>
+<button class="preview " id="preview-button">Preview Resume</button>
+<div class="btn">
+   <input type="submit" class="w3-btn w3-green w3-round w3-ripple" value="Download Resume (format-1)" onclick="download()">
+   <input type="submit" class="w3-btn w3-green w3-round w3-ripple" value="Download Resume (format-2)" onclick="download2()">
+   <input type="submit" class="w3-btn w3-green w3-round w3-ripple" value="Download Resume (format-3)" onclick="download3()">
+   <div id="resume-preview" class="w3-card w3-padding w3-white" style="width: 40%; margin-left: 18px;" >
+   <div id="resume-preview" class="w3-card w3-padding w3-white mt-4">
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>  
+</body>
+</html>
